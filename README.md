@@ -3,6 +3,9 @@
 ECE 4424 Spring 2021
 Professor: Lifu Huang
 
+# Link To Google Drive Group
+https://drive.google.com/drive/folders/0ACgokEX6DnrjUk9PVA
+
 # Project Description
 Overview
 
@@ -49,4 +52,5 @@ Handwritten Digit Recognition: given an image, predict the corresponding digit f
     Kaggle: https://www.kaggle.com/
     SemEval 2020: https://alt.qcri.org/semeval2020/index.php?id=tasks (Links to an external site.)
     Conference workshops, e.g., https://2020.emnlp.org/workshops (Links to an external site.)
+
 
