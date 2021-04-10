@@ -34,6 +34,7 @@ Deliverables
     what algorithms you used to solve the problem and details of how the algorithms work
     the experimental results, including detailed performance, e.g., Precision, Recall, F-score, detailed discussion and analysis of the results, e.g., remaining errors, advantages and disadvantages of each algorithm you observed, how to further improve them, etc. 
     describe the role of each team member within the project
+    Data can be downloaded from Kaggle: https://www.kaggle.com/
 
 3. The final deliverable is a final project presentation, which should cover all the content you discuss in the final report. 
 Project Ideas
