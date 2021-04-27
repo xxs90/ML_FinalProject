@@ -3,7 +3,8 @@
 ECE 4424 / CS 4824 Spring 2021
 
 Professor: Lifu Huang
-Author: 
+
+Author:  
 
 # Link To Google Drive Group
 https://drive.google.com/drive/folders/0ACgokEX6DnrjUk9PVA
