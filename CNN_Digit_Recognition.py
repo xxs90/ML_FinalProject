@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+Description: This is a CNN digit recognition using Tensorflow
 Created on Thu Apr  8 19:41:17 2021
-
 @author: Yijia Shi
 """
 import tensorflow as tf
