@@ -10,14 +10,14 @@ from matplotlib import pyplot as plt
 from scipy import optimize
 
 # Load Data
-train = pd.read_csv("/home/xxs/Documents/ML_FinalProject/input/train.csv")
-test = pd.read_csv("/home/xxs/Documents/ML_FinalProject/input/test.csv")
+train = pd.read_csv("train.csv")
+test = pd.read_csv("test.csv")
 test.index.name = 'ImageId'
 test.index = test.index + 1
 
 y = train.label.values
 x = train.iloc[:, 1:].values / 255.0  # Normalize image values
-test_data = test.values / 255.0
+test_data = test.iloc[:, 1:].values / 255.0
 
 # Define size variables
 TRAIN_SET_SIZE, N_FEATURES = x.shape
@@ -32,7 +32,7 @@ x = np.hstack((bias_train, x))
 
 bias_test = np.ones((TEST_SET_SIZE, 1))
 test_data = np.hstack((bias_test, test_data))
-
+#print(bias_test.shape)
 
 def sigmoid(Z):
     return 1.0 / (1 + np.exp(-Z))
@@ -73,7 +73,6 @@ def class_classifier(x, y):
 
 def classify(x, W):
     # For each sample in X return the most probable class.
-    # print(W.dot(X.T).T)
     return np.argmax(W.dot(x.T).T, axis=1)
 
 
@@ -89,7 +88,9 @@ accuracy = (Y_valid == prediction).mean()
 print("The accuracy of this model is %.2f %%." % (accuracy * 100))
 
 # Train the model with all of the training data.
+
 W = class_classifier(x, y)
+
 #print(test_data.shape)
 # W = (W.reshape(10, 786))
 #print(W.shape)
