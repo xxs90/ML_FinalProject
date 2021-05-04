@@ -60,7 +60,7 @@ def class_classifier(x, y):
     init_theta = np.zeros(N_FEATURES + 1)
 
     options = {
-        "max_iteration": MAX_ITERATIONS
+        "maxiter": MAX_ITERATIONS
     }
 
     for label in range(LABELS):
